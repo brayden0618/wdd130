@@ -1,5 +1,5 @@
 :root {
-    --heading-background-color: rgba(72, 0, 255, 0.877);
+    --heading-background-color: rgb(72, 0, 255);
     --heading-text-color: #333;
     --heading-font: 'Montserrat', Helvetica, sans-serif;
     --padding: 1rem;

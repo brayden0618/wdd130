@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #044389;
+    --secondary-color: #f0f0f0;
+    --accent1-color: #ffad05;
+    --accent2-color: #5995ed;
+    --heading-font: 'Roboto', sans-serif;
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    position: absolute;
+    top: 20%;
+}
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--accent2-color);
+}
+a {
+    text-decoration: none;
+}
+.hero img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+article {
+    display: block;
+    float: right;
+    width: 50%;
+    padding: 30px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+section {
+    display: block;
+    float: left;
+    padding: 50px;
+}
+footer {
+    display: block;
+    clear: both;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}

@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>WDD 130 | HTML Form - User Poll</title>
 </head>
 <body>
@@ -13,24 +17,30 @@
     <form>
         <fieldset>
             <legend>Contact Information</legend>
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required><br><br>
-            <label for="useremail">Email:</label>
-            <input type="email" id="useremail" name="useremail" required><br><br>
+            <div class="form-item">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-item column2">
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Questions</legend>
-            <label for="question1">1. What is your favorite internet browser?</label>
-            <select id="question1" name="question1" required>
-                <option value="chrome">Google Chrome</option>
-                <option value="firefox">Mozilla Firefox</option>
-                <option value="safari">Apple Safari</option>
-                <option value="edge">Microsoft Edge</option>
-                <option value="other">Other</option>
-            </select>
-            <label for="question2">Do you have a houshold pet?</label>
+            <div class="form-item column1">
+                <label for="question1">1. What is your favorite internet browser?</label>
+                <select id="question1" name="question1" required>
+                    <option value="chrome">Google Chrome</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="safari">Apple Safari</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <label for="question2">2. Do you have a houshold pet?</label>
             <input type="checkbox" id="pet" name="pet">
-            <label for="feedback">List the places you have lived</label>
+            <label for="feedback">3. List the places you have lived</label>
             <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your answer here..."></textarea>
         </fieldset>
         <button type="submit">Submit</button>

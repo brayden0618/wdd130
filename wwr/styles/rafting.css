@@ -127,3 +127,71 @@ nav a {
     position: relative;
     padding: 6px;
 }
+form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    max-width: 2000px;
+    border: thin solid var(--primary-color);
+}
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+button {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--accent1-color);
+}
+button:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+form input[type="email"] {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+form input[type="password"] {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+form input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+form input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.form-item label{
+    text-align: left;
+    font-size: 1.2em;
+    padding-right: 1rem;
+}
+.form-item input, .form-item select, .form-item textarea{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
